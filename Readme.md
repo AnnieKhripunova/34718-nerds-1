@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Anna Khripunova](https://up.htmlacademy.ru/htmlcss/16/user/34718).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://up.htmlacademy.ru/htmlcss/16/user/29644).
 
 ---
 
