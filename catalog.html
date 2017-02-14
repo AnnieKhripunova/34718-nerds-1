@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс. Магазин шаблонов</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header-main">
@@ -14,22 +15,30 @@
           </a>
           <nav class="navigation-header">
             <ul class="navigation_sections">
-              <li class="nav_sections"><a href="#">Студия</a></li>
-              <li class="nav_sections"><a href="#">Клиенты</a></li>
-              <li class="nav_sections"><a href="#">Магазин</a></li>
-              <li class="nav_sections"><a href="#">Контакты</a></li>
+              <li class="nav_sections">
+                <a href="#">Студия</a>
+              </li>
+              <li class="nav_sections">
+                <a href="#">Клиенты</a>
+              </li>
+              <li class="nav_sections_active">
+                <a href="#">Магазин</a>
+              </li>
+              <li class="nav_sections">
+                <a href="#">Контакты</a>
+              </li>
+              <li class="cart-block">
+                <div class="cart-icon"></div>
+                <a class="cart-title" href="#">Корзина</a>
+              </li>
             </ul>
-            <div class="cart-block">
-              <div class="cart-icon"> </div>
-              <a class="cart-title" href="#">Корзина</a>
-            </div>
           </nav>
-        </div>
-        <div class="header_catalog_title">
-          <h1>Магазин готовых шаблонов</h1>
         </div>
       </div>
     </header>
+    <div class="catalog-top-title">
+      <h1>Магазин готовых шаблонов</h1>
+    </div>
     <main>
       <form class="catalog-filters">
         <fieldset class="filter-price">
@@ -175,10 +184,25 @@
       <div class="contacts">
         <div class="container">
           <div class="contacts_write-us-block">
-            <h1 class="contacts_write-us_title">Nerds Design Studio</h1>
+            <h3 class="contacts_write-us_title">Nerds Design Studio</h3>
             <div class="contacts_write-us_address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
             <span class="contacts_write-us_phone">тел. +7 (812) 275-75-75</span>
             <a href="" class="contacts_write-us_btn">Напишите нам</a>
+            <div class="write-us-box">
+              <form name="write-us-modal" action="#" enctype="multipart/form-data" method="post">
+                <fieldset>
+                  <legend class="write-us-modal_title">Напишите нам</legend>
+                  <label for="write-us-name">Ваше имя:</label>
+                  <input type="text" name="write-us-name" id="write-us-name" placeholder="Представьтесь, пожалуйста">
+                  <label for="write-us-email">Ваш e-mail:</label>
+                  <input type="text" name="write-us-email" id="write-us-email" placeholder="Для отправки ответа">
+                  <label for="write-us-text">Текст письма:</label>
+                  <input type="text" name="write-us-text" id="write-us-text" placeholder="В свободной форме">          
+                </fieldset>
+                <button class="write-us-modal_btn" type="submit">Отправить</button>
+              </form>
+              <div class="write-us-box_close"></div>
+            </div>
           </div>
           <div class="contacts_map-block">
             <a class="contacts_map_pic" href=""  target="_blank">
@@ -191,11 +215,15 @@
     <footer class="footer">
       <div class="container">
         <section class="footer-social">
-          <a class="social-btn_vk" href="#">ВКонтакте</a>
-          <a class="social-btn_fb" href="#">Фейсбук</a>
-          <a class="social-btn_inst" href="#">Инстаграм</a>
-          <p class="footer-social_title">Давайте дружить, это выгодно!</p>
-          <h4 class="footer-social_descrition">Скидка 10% для друзей из социальных сетей.</h4>
+          <div class="social-btn-group">
+            <a class="social-btn_vk" href="#">ВКонтакте</a>
+            <a class="social-btn_fb" href="#">Фейсбук</a>
+            <a class="social-btn_inst" href="#">Инстаграм</a>
+          </div>
+          <div class="social-texts-group">
+            <p class="footer-social_title">Давайте дружить, это выгодно!</p>
+            <h4 class="footer-social_descrition">Скидка 10% для друзей из социальных сетей.</h4>
+          </div>
         </section>
       </div>
     </footer>
