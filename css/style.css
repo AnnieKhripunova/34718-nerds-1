@@ -46,11 +46,18 @@ line-height: 30px;
 text-transform: uppercase;
 }
 
-.slide-title,  {
+.slide-title, .slide-text {
 font-size: 55px;
 font-weight: bold;
 color: #000000;
 line-height: 55px;
+}
+
+.slider_description {
+font-size: 16px;
+font-weight: normal;
+color: #283136;
+line-height: 24px;
 }
 
 .about-us_areas-title, .about-us_advantages_title {
@@ -117,4 +124,117 @@ color: #444444;
 
 .slide2, .slide3 {
 	display: none;
+}
+
+.clearfix::after {
+	clear: both;
+	display: block;
+}
+
+.container {
+	width: 1440px;
+	padding: 0 10px;
+	margin: 0 auto; 
+	background-color: #C0C0C0;
+}
+
+.header {
+	float: left;
+	clear: both;
+	background-color: yellow;
+	min-height: 70px;
+}
+
+.header-menu {
+	float: left;
+	clear: both;
+	background-color: yellow;
+	min-height: 70px;
+}
+
+.navigation-header {
+	float: left;
+	background-color: yellow;
+	min-height: 70px;
+}
+
+.header-logo {
+	float: left;
+	width: 160px;
+	min-height: 70px;
+}
+
+.navigation_sections {
+	float: right;
+	width: 500px;
+	min-height: 70px;
+}
+
+.cart-block {
+	float: right;
+	width: 80px;
+	min-height: 70px;
+}
+
+.slider {
+	width: 1180px;
+	float: left;
+	background-color: yellow;
+    margin-left: 120px;
+	margin-right: 140px;
+}
+
+.slide-text {
+	float: left;
+	border: 1px dotted green;
+	margin-top: 81px;
+	padding-left: 20px;
+
+}
+
+.slide-pic {
+	float: left;
+	border: 1px dotted green;
+	width: 698px;
+	height: 413px;
+	margin-right: 171px;
+	margin-top: 35px;
+	margin-left: 58px;
+
+}
+
+.slider-controls {
+	float: left;
+	background-color: green;
+}
+
+.advantages {
+    float: left;
+	background-color: yellow;
+	width: 1180px;
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-right: 200px;
+}
+
+.advantages_block {
+    display: inline-block;
+    border: 1px dotted green;
+    margin-right: 100px;
+    margin-left: 20px;
+    margin-top: 80px;	
+}
+
+.advantages_block::last-child {
+    margin-right: 0;
+}
+
+.contacts {
+	float: left;
+	background-color: yellow;
+}
+
+.footer {
+	float: left;
+	background-color: yellow;
 }
