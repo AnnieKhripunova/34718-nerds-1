@@ -4,7 +4,7 @@ font-size: 16px;
 font-weight: normal;
 color: #283136;
 line-height: 24px;
-min-width: 1440x;
+min-width: 1200x;
   margin: 0;
   padding: 0;
 }
@@ -129,53 +129,53 @@ color: #444444;
 	display: none;
 }
 
+/*
 .clearfix::after {
+	content: "";
 	clear: both;
 	display: block;
 }
-
+*/
 
 .container {
-	width: 1440px;
-	padding: 0 10px;
-	margin: 0 auto; 
+	width: 1200px;
+	margin: 50px auto; 
 	background-color: #C0C0C0;
 }
 
 .header {
 	background-color: yellow;
-	min-height: 130px;
+	padding: 0 10px;
 	margin: 0 auto;
 }
 
 .navigation-header {
-	float: left;
+	width: 1200px;
 	background-color: yellow;
 	min-height: 70px;
+	margin-top: 49px;
+
 }
+
 .header-menu {
 	float: left;
-	clear: both;
 	outline: 2px dotted green;
 	width: 1160px;
-	min-height: 130px;
 	margin-top: 49px;
-	margin-left: 140px;
-	clear: both;
+    margin-left: 20px;
+    margin-right: 120px;
 }
 
 .header-logo {
 	float: left;
 	width: 160px;
-	min-height: 70px;
-	clear: both;
 }
 
 .navigation_sections {
-	float: right;
+	float: left;
 	width: 820px;
-	min-height: 70px;
-	clear: both;
+	margin-left: 120px;
+    margin-right: 112px;
 }
 
 .cart-block {
@@ -184,28 +184,37 @@ color: #444444;
 	min-height: 70px;
 }
 
+/*
 .slider {
-    float: left;
 	background-color: yellow;
-	width: 1160px;
-    margin-left: 140px;
-    margin-right: 140px;
+	padding: 0 10px;
+	margin: 0 auto;
+} */
+
+.slides {
+	float: left;
+	width: 1200px;
+	background-color: yellow;
+	margin-left: 20px;
+    margin-right: 120px;
     margin-top: 80px;
+
 }
 
 .slide-text {
 	float: left;
+	width: 380px;
 	outline: 2px dotted green;
 	margin-top: 81px;
 	padding-left: 20px;
+
 }
 
 .slide-pic {
-	float: left;
+	float: right;
 	outline: 2px dotted green;
 	width: 698px;
 	height: 413px;
-	margin-right: 171px;
 	margin-top: 35px;
 	margin-left: 58px;
 }
@@ -215,16 +224,15 @@ color: #444444;
 	outline: 2px dotted green;
 	width: 90px;
     margin-left: 676px;
-    margin-right: 676px;
-} 
 
+} 
 
 .advantages {
     float: left;
 	background-color: yellow;
 	width: 1160px;
-    margin-left: 140px;
-    margin-right: 200px;
+    margin-left: 20px;
+    margin-right: 120px;
     margin-top: 80px;
 }
 
@@ -244,8 +252,8 @@ color: #444444;
 	float: left;
 	background-color: yellow;
 	width: 1160px;
-     margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 20px;
+    margin-right: 120px;
     margin-top: 80px;
 }
 
@@ -272,40 +280,58 @@ color: #444444;
     float: left;
 	background-color: yellow;
 	width: 1160px;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 20px;
+    margin-right: 120px;
     margin-top: 80px;
 }
 
 .our-projetcs_logos {
 	outline: 2px dotted green;
-    margin-left: 140px;
-    margin-right: 200px;
+    margin-left: 20px;
+    margin-right: 120px;
     margin-top: 20px;
-
 }
 
 .contacts {
-    float: left;
 	background-color: yellow;
-	width: 1440px;
+    margin-left: 120px;
+    margin-right: 120px;
     margin-top: 80px;
+
+}
+
+.contacts_write-us-block {
+	float: left;
+	width: 316px;
+	outline: 2px dotted green;
     margin-left: 20px;
 }
 
-.footer {
-    float: left;
-	background-color: yellow;
+.contacts_map-block {
+	float: left;
 	width: 1440px;
-	min-height: 220px;
-	margin: 0 auto; 
+	outline: 2px dotted green;
+	margin-right: auto;
+    margin-left: auto;
+    clear: both;
+}
+
+
+.footer {
+	background-color: yellow;
+    margin-top: 80px;
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-bottom: 70px;
+    clear: both;
 }
 
 .footer-social {
     float: left;
 	outline: 2px dotted green;
 	width: 1160px;
-	margin: 0 auto; 
+	margin-right: 120px;
+    margin-left: 20px;
 }
 
 .social-btn-group {
